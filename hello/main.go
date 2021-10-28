@@ -4,9 +4,9 @@ package main
 import (
 	"fmt"
 	"log"
-
 	"example.com/greetings"
 )
+
 
 func main() {
 	log.SetPrefix("greetings log: ")
