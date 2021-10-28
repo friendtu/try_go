@@ -7,6 +7,7 @@ import (
 	"example.com/greetings"
 )
 
+
 func main() {
 	log.SetPrefix("greetings log: ")
 	log.SetFlags(0)
