@@ -1,20 +1,18 @@
 package main
 
-
 import (
 	"fmt"
 	"log"
+
 	"example.com/greetings"
 )
-
 
 func main() {
 	log.SetPrefix("greetings log: ")
 	log.SetFlags(0)
-
-	message,err := greetings.Hello("1")
-	if err!=nil {
+	messages, err := greetings.Hellos([]string{"Tud", "Lian"})
+	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println(message)
+	fmt.Println(messages)
 }
